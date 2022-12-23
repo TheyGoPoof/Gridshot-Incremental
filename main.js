@@ -9,12 +9,10 @@ var saveGameLoop = window.setInterval(function () {
 }, 5000)
 
 // if there is a game save, it loads it
-/*
 var gameSave = JSON.parse(localStorage.getItem("gameSave"))
 if (gameSave !== null) {
     gameData = gameSave
 }
-*/
 
 createGrid();
 
