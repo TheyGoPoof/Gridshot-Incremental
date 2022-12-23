@@ -1,0 +1,62 @@
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    max-height: 500px;
+    z-index: 1;
+    background-color: dimgray;
+}
+
+#button-container button {
+    margin: auto auto;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 0px solid black;
+    background-color: lightslategray;
+    color: lightgray;
+}
+
+#button-container button:hover {
+    background-color: hsl(210, 14%, 63%);
+    color: white;
+}
+
+#button-container button:active {
+    background-color: hsl(210, 14%, 73%);
+    color: white;
+}
+
+#button-container button.special {
+    background-color: gold;
+    color: black;
+}
+
+#button-container button.special:hover {
+    background-color: hsl(51, 100%, 80%);
+    color: hsl(0, 0%, 10%);
+}
+
+#button-container button.special:active {
+    background-color: hsl(51, 100%, 90%);
+    color: hsl(0, 0%, 10%);
+}
+
+#counter {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: calc(50% - 300px);
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+body {
+    background-color: dimgray;
+}
