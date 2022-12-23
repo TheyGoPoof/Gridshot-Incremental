@@ -16,20 +16,6 @@ if (gameSave !== null) {
 
 createGrid();
 
-/*
-var checkId = "" + Math.floor(Math.random() * width) + "," + Math.floor(Math.random() * height);
-randButton = document.getElementById(checkId);
-randButton.className = "special";
-
-var checkId = "" + Math.floor(Math.random() * width) + "," + Math.floor(Math.random() * height);
-randButton = document.getElementById(checkId);
-randButton.className = "special";
-
-var checkId = "" + Math.floor(Math.random() * width) + "," + Math.floor(Math.random() * height);
-randButton = document.getElementById(checkId);
-randButton.className = "special";
-*/
-
 // creates the grid
 function createGrid() {
     // Clear the existing grid
@@ -55,15 +41,27 @@ function createGrid() {
                     if (gameData.clicks < 100) {
                         gameData.stage = 1;
                     }
-                    if (100 <= gameData.clicks && gameData.clicks < 1000) {
+                    if (100 <= gameData.clicks && gameData.clicks < 200) {
                         if (gameData.stage != 2) {
                             gameData.stage = 2;
                             createGrid(grid);
                         }
                     }
-                    if (1000 <= gameData.clicks && gameData.clicks < 10000) {
+                    if (200 <= gameData.clicks && gameData.clicks < 300) {
                         if (gameData.stage != 3) {
                             gameData.stage = 3;
+                            createGrid(grid);
+                        }
+                    }
+                    if (300 <= gameData.clicks && gameData.clicks < 400) {
+                        if (gameData.stage != 4) {
+                            gameData.stage = 4;
+                            createGrid(grid);
+                        }
+                    }
+                    if (400 <= gameData.clicks && gameData.clicks < 500) {
+                        if (gameData.stage != 5) {
+                            gameData.stage = 5;
                             createGrid(grid);
                         }
                     }
